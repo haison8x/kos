@@ -5,8 +5,6 @@ using namespace std;
 
 float calculateDistance(float x1, float y1, float x2, float y2)
 {
-    return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-
     float squareX = (x2 - x1) * (x2 - x1);
     float squareY = (y2 - y1) * (y2 - y1);
     float squareSum = squareX + squareY;
@@ -23,7 +21,7 @@ int main()
 
     if (n <= 1)
     {
-        printf("%f", 0);
+        printf("%.6f", 0);
         return 0;
     }
 
@@ -49,7 +47,7 @@ int main()
         currentY = nextY;
     }
 
-    printf("%f", sum);
+    printf("%.6f", sum);
 
     return 0;
 }
